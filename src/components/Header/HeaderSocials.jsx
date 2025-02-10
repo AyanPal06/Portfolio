@@ -1,5 +1,5 @@
 import React from "react";
-import { BsLinkedin } from "react-icons/bs";
+import { BsCodeSlash, BsFileCode, BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 
@@ -29,6 +29,22 @@ function HeaderSocials() {
         target="_blank"
       >
         <BsTwitter />
+      </a>
+      <a
+        href="https://www.geeksforgeeks.org/user/palayan/"
+        rel="noopener noreferrer"
+        // eslint-disable-next-line
+        target="_blank"
+      >
+       <BsCodeSlash />
+      </a>
+      <a
+        href="https://leetcode.com/u/Ayan__Pal/"
+        rel="noopener noreferrer"
+        // eslint-disable-next-line
+        target="_blank"
+      >
+       <BsFileCode />
       </a>
     </div>
   );

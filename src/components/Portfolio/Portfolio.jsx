@@ -9,6 +9,7 @@ import blog from "../../Assets/my blog.png"
 import tic from "../../Assets/tic tac to.png"
 import study from "../../Assets/study.png"
 import razor from "../../Assets/Razorpay.png"
+import auction from "../../Assets/AuctionBharat.png"
 
 const boxstyle = {
   height: "100%",
@@ -23,6 +24,89 @@ function Portfolio() {
       <h2>Projects</h2>
 
       <div className="portfolio_cards">
+      <Box
+          width="350px"
+          height="380px"
+          sx={{
+            margin: "0 auto",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Soft shadow for depth
+            borderRadius: "12px", // Rounded corners for a smoother appearance
+            overflow: "hidden", // Ensures content stays within rounded corners
+            backgroundColor: "#f3f4f6", // Light background color for the box
+            transition: "transform 0.3s ease, box-shadow 0.3s ease", // Smooth transition effect
+            "&:hover": {
+              transform: "translateY(-5px)", // Lifts card on hover for an interactive feel
+              boxShadow: "0 8px 16px rgba(0, 0, 0, 0.15)", // Deeper shadow on hover
+            },
+          }}
+        >
+          <Card
+            style={{
+              padding: "16px",
+              textAlign: "center",
+              borderRadius: "12px",
+              transition: "transform 0.3s ease, box-shadow 0.3s ease",
+              backgroundColor: "#ffffff", // White background for contrast within the card
+            }}
+          >
+            <CardContent>
+              <img
+                src={auction}
+                alt=""
+                className="portfolio_img"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "8px",
+                  transition: "transform 0.3s ease",
+                }}
+                onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+                onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+              />
+              <Typography
+                gutterbottom
+                variant="h5"
+                component="div"
+                sx={{ marginTop: "20px", fontWeight: "bold", color: "#333" }} // Darker color for title
+              >
+               MERN-based real-time auction platform for creating, managing, and bidding on auctions.
+              </Typography>
+              <CardActions
+                sx={{ marginTop: "10px", justifyContent: "center" }}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
+                <a
+                  href="https://github.com/AyanPal06/Auction-Platform-AuctionBharat"
+                  style={{
+                    marginRight: "10px",
+                    textDecoration: "none",
+                    color: "#1976d2",
+                    fontWeight: "500",
+                  }}
+                >
+                  Github
+                </a>
+                <a
+                  href="https://auctionbharat.netlify.app/"
+                  style={{
+                    textDecoration: "none",
+                    color: "#fff",
+                    backgroundColor: "#1976d2",
+                    padding: "8px 16px",
+                    borderRadius: "8px",
+                    fontWeight: "500",
+                    transition: "background-color 0.3s ease",
+                  }}
+                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#145a9e")}
+                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#1976d2")}
+                >
+                  Live Demo
+                </a>
+              </CardActions>
+            </CardContent>
+          </Card>
+        </Box>
+
         <Box
           width="350px"
           height="380px"

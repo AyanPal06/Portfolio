@@ -10,11 +10,11 @@ import {
   CardContent,
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
-import TweeterIcon from "@mui/icons-material/Twitter"
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useRef } from "react";
 
 import emailjs from "emailjs-com";
+import { Code } from "@mui/icons-material";
 
 const style = {
   backgroundColor: "#2c2c6c",
@@ -85,10 +85,11 @@ function Contact() {
               </CardContent>
             </Card>
           </Box>
+
           <Box width="18.75rem">
             <Card style={style}>
               <CardContent>
-                <TweeterIcon
+                < Code
                   style={{
                     display: "block",
                     margin: "0 auto",
@@ -96,17 +97,17 @@ function Contact() {
                   }}
                 />
                 <Typography variant="h6" align="center">
-                  Twitter
+                  GFG Codeing Profile
                 </Typography>
                 <Typography variant="subtitle1" align="center">
-                Ayan Pal
+                palayan
                 </Typography>
                 <Typography
                   variant="body1"
                   align="center"
                   style={{ cursor: "pointer" }}
                   onClick={() =>
-                    window.open("https://x.com/AyanPal63087154")
+                    window.open("https://www.geeksforgeeks.org/user/palayan/")
                   }
                   color="primary"
                   mt={1.5}
@@ -116,6 +117,8 @@ function Contact() {
               </CardContent>
             </Card>
           </Box>
+
+
           <Box width="18.75rem">
             <Card style={style}>
               <CardContent>
