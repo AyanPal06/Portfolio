@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsCodeSlash, BsFileCode, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import img from "../../Assets/Ap logo.jpg"
 function Footer() {
@@ -30,6 +30,9 @@ function Footer() {
       </ul>
 
       <div className="footer_socials">
+      <a href="https://www.geeksforgeeks.org/user/palayan/">
+          <BsCodeSlash />
+        </a>
         <a href="https://github.com/AyanPal06">
           <BsGithub />
         </a>
@@ -39,6 +42,9 @@ function Footer() {
         </a>
         <a href="https://www.linkedin.com/in/ayan-pal-45732222a/">
           <BsLinkedin />
+        </a>
+        <a href="https://leetcode.com/u/Ayan__Pal/">
+          <BsFileCode />
         </a>
       </div>
 

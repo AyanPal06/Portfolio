@@ -38,14 +38,6 @@ function HeaderSocials() {
       >
        <BsCodeSlash />
       </a>
-      <a
-        href="https://leetcode.com/u/Ayan__Pal/"
-        rel="noopener noreferrer"
-        // eslint-disable-next-line
-        target="_blank"
-      >
-       <BsFileCode />
-      </a>
     </div>
   );
 }
